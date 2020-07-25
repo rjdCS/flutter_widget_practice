@@ -3,7 +3,7 @@
  * @Author: RJD
  * @Date: 2020-07-24 19:20:21
  * @LastEditors: RJD
- * @LastEditTime: 2020-07-25 17:16:37
+ * @LastEditTime: 2020-07-25 17:19:32
  * @FilePath: /my_widgets/lib/widgets/foundation_widgets/checkbox.dart
  */
 
@@ -111,8 +111,7 @@ class _CheckBoxWidgetState extends State<CheckBoxWidget> {
                     _checkValues[1] = value;
                   });
                 },),
-
-            )
+            ),
           ],
         ),
       ),
