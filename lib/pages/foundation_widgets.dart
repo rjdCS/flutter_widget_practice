@@ -3,13 +3,14 @@
  * @Author: RJD
  * @Date: 2020-07-23 16:08:59
  * @LastEditors: RJD
- * @LastEditTime: 2020-07-25 20:18:13
+ * @LastEditTime: 2020-07-25 20:49:28
  * @FilePath: /my_widgets/lib/pages/foundation_widgets.dart
  */
 
 import 'package:flutter/material.dart';
 import 'package:my_widgets/widgets/foundation_widgets/button.dart';
 import 'package:my_widgets/widgets/foundation_widgets/checkbox.dart';
+import 'package:my_widgets/widgets/foundation_widgets/image_and_icon.dart';
 import 'package:my_widgets/widgets/foundation_widgets/progress_indicator.dart';
 import 'package:my_widgets/widgets/foundation_widgets/radio.dart';
 import 'package:my_widgets/widgets/foundation_widgets/rich_text.dart';
@@ -58,6 +59,7 @@ class FoundationWidget extends StatelessWidget {
                   _buttonItem(context, "check box widget —— 复选框组件", CheckBoxWidget()),
                   _buttonItem(context, "slider widget —— 滑块组件", SliderWidget()),
                   _buttonItem(context, "progress indicator widget —— 进度条组件", ProgressIndicatorWidget()),
+                  _buttonItem(context, "image icon widget —— 图像图标组件", ImageIconWidget()),
                 ],
               ),
           ),
