@@ -3,13 +3,14 @@
  * @Author: RJD
  * @Date: 2020-07-23 16:08:59
  * @LastEditors: RJD
- * @LastEditTime: 2020-07-25 17:43:25
+ * @LastEditTime: 2020-07-25 20:18:13
  * @FilePath: /my_widgets/lib/pages/foundation_widgets.dart
  */
 
 import 'package:flutter/material.dart';
 import 'package:my_widgets/widgets/foundation_widgets/button.dart';
 import 'package:my_widgets/widgets/foundation_widgets/checkbox.dart';
+import 'package:my_widgets/widgets/foundation_widgets/progress_indicator.dart';
 import 'package:my_widgets/widgets/foundation_widgets/radio.dart';
 import 'package:my_widgets/widgets/foundation_widgets/rich_text.dart';
 import 'package:my_widgets/widgets/foundation_widgets/slider.dart';
@@ -56,6 +57,7 @@ class FoundationWidget extends StatelessWidget {
                   _buttonItem(context, "radio widget —— 单选框组件", RadioWidget()),
                   _buttonItem(context, "check box widget —— 复选框组件", CheckBoxWidget()),
                   _buttonItem(context, "slider widget —— 滑块组件", SliderWidget()),
+                  _buttonItem(context, "progress indicator widget —— 进度条组件", ProgressIndicatorWidget()),
                 ],
               ),
           ),
@@ -66,7 +68,7 @@ class FoundationWidget extends StatelessWidget {
   _buttonItem(BuildContext context, String title, Widget pageName) {
     return Container(
         margin: EdgeInsets.only(top: 20),
-        width: 300,
+        width: 350,
         height: 50,
         child: RaisedButton(
           child: Text(
@@ -80,6 +82,7 @@ class FoundationWidget extends StatelessWidget {
               MaterialPageRoute(builder: (context) => pageName),
             );
           },
-        ));
+        )
+    );
   }
 }
