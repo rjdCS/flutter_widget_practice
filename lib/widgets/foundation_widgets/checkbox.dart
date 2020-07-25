@@ -3,7 +3,7 @@
  * @Author: RJD
  * @Date: 2020-07-24 19:20:21
  * @LastEditors: RJD
- * @LastEditTime: 2020-07-24 20:55:40
+ * @LastEditTime: 2020-07-25 17:16:37
  * @FilePath: /my_widgets/lib/widgets/foundation_widgets/checkbox.dart
  */
 
@@ -84,7 +84,35 @@ class _CheckBoxWidgetState extends State<CheckBoxWidget> {
                 ),
               ),
             ),
-            Text(_checkValues.toString())
+            Text(_checkValues.toString()),
+            Container(
+              width: 200,
+              margin: EdgeInsets.only(top: 20),
+              child: CheckboxListTile(
+                title: Text("rjd"),
+                subtitle: Text("I am RJD"),
+                value: _checkValues[0], 
+                onChanged: (value) {
+                  setState(() {
+                    _checkValues[0] = value;
+                  });
+                },
+              ),
+            ),
+            Container(
+              width: 120,
+              margin: EdgeInsets.only(top: 20),
+              child: CheckboxListTile(
+                controlAffinity: ListTileControlAffinity.leading, // 勾选框在前
+                secondary: Icon(Icons.person),
+                value: _checkValues[1], 
+                onChanged: (value) {
+                  setState(() {
+                    _checkValues[1] = value;
+                  });
+                },),
+
+            )
           ],
         ),
       ),
