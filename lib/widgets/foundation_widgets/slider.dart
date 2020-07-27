@@ -3,7 +3,7 @@
  * @Author: RJD
  * @Date: 2020-07-25 17:35:04
  * @LastEditors: RJD
- * @LastEditTime: 2020-07-25 18:08:35
+ * @LastEditTime: 2020-07-26 16:43:54
  * @FilePath: /my_widgets/lib/widgets/foundation_widgets/slider.dart
  */
 
@@ -17,7 +17,7 @@ class SliderWidget extends StatefulWidget {
 
 class _SliderWidgetState extends State<SliderWidget> {
   double _sliderValue = 0;
-  double _sliderValue_cup = 0;
+  double _sliderValueCup = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -55,16 +55,16 @@ class _SliderWidgetState extends State<SliderWidget> {
               child: CupertinoSlider(
                 min: 0,
                 max: 100,
-                value: _sliderValue_cup, 
+                value: _sliderValueCup, 
                 divisions: 10,
                 onChanged: (value) {
                   setState(() {
-                    _sliderValue_cup = value;
+                    _sliderValueCup = value;
                   });
                 },
               ),
             ),
-            Text("IOS风格 当前选择：$_sliderValue_cup / 100")
+            Text("IOS风格 当前选择：$_sliderValueCup / 100")
           ],
         ),
       ),
